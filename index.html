@@ -351,8 +351,10 @@
     margin-top:80px; display:flex; justify-content:space-between; align-items:center;
     padding-top:26px; border-top:1px solid var(--line);
     font-family:'IBM Plex Mono', monospace; font-size:12px; color:var(--white-faint);
-    flex-wrap:wrap; gap:12px;
+    flex-wrap:wrap; gap:16px;
   }
+  .foot-links .foot-legal{ display:flex; gap:24px; flex-wrap:wrap; }
+  .foot-links .foot-legal a:hover{ color:var(--white); }
 
   @media (prefers-reduced-motion: reduce){ *{ animation:none !important; transition:none !important; } }
 </style>
@@ -559,8 +561,12 @@
     <a class="btn btn-primary" href="https://open.spotify.com/show/6aXX0Kz5ptIOHHF8WQzSWd" target="_blank" rel="noopener">Escuchar en Spotify</a>
 
     <div class="foot-links">
-      <span>Testeha Estudio — Proyecto para Asociación Achalay</span>
-      <span>Abriendo el Foco, 2025</span>
+      <span>© 2026 Testeha Estudio — Un proyecto para Asociación Achalay</span>
+      <div class="foot-legal">
+        <a href="/aviso-legal">Aviso Legal</a>
+        <a href="/politica-privacidad">Política de Privacidad</a>
+        <a href="/politica-cookies">Política de Cookies</a>
+      </div>
     </div>
   </div>
 </footer>
