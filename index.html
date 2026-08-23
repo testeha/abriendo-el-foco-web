@@ -97,6 +97,17 @@
     background:var(--green); flex-shrink:0;
   }
   .navbar .studio-badge:hover{ border-color:var(--white-faint); color:var(--white); }
+  @media (max-width:600px){
+    .navbar{ padding:14px 18px; }
+    .navbar .logo{ font-size:16px; }
+    .navbar .studio-badge{
+      font-size:9.5px;
+      padding:7px 10px;
+      max-width:44vw;
+      overflow:hidden;
+      text-overflow:ellipsis;
+    }
+  }
   @media (max-width:760px){ .navbar nav{ display:none; } }
 
   /* ---------- HERO ---------- */
@@ -125,7 +136,7 @@
     gap:56px;
     align-items:center;
   }
-  @media (max-width:900px){ .hero-grid{ grid-template-columns:1fr; } }
+  @media (max-width:900px){ .hero-grid{ grid-template-columns:1fr; } .hero-arcs{ display:none; } }
 
   .hero h1{
     font-size:clamp(46px, 6.4vw, 78px);
@@ -176,7 +187,7 @@
   }
   .phone{
     position:relative;
-    width:290px;
+    width:min(290px, 100%);
     background:#101210;
     border:8px solid #1c1e19;
     border-radius:38px;
@@ -602,9 +613,9 @@
     <div class="foot-links">
       <span>© 2026 Asociación Achalay — Diseño y desarrollo web Testeha Estudio</span>
       <div class="foot-legal">
-        <a href="/aviso-legal">Aviso Legal</a>
-        <a href="/politica-privacidad">Política de Privacidad</a>
-        <a href="/politica-cookies">Política de Cookies</a>
+        <a href="https://achalay.es/aviso-legal/" target="_blank" rel="noopener">Aviso Legal</a>
+        <a href="https://achalay.es/aviso-legal-y-politica-de-privacidad/" target="_blank" rel="noopener">Política de Privacidad</a>
+        <a href="https://achalay.es/politica-de-cookies/" target="_blank" rel="noopener">Política de Cookies</a>
       </div>
     </div>
   </div>
